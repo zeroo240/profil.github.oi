@@ -1,0 +1,216 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.nav{
+  width: 100%;
+  height: 10vh;
+  background: rgba(255,255,255,0.192);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.200);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 999;
+}
+.diskripsi{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(0deg, #FFCCF2, #0033FF, #FFCCF2);
+}
+h1{
+  text-transform: capitalize;
+}
+h2{
+  text-transform: capitalize;
+}
+.nav ul{
+  margin-left: -15vw;
+}
+.nav ul li{
+  float: left;
+  margin-left: 6vw;
+  font-size: 4vw;
+  list-style: none;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:active{
+  color: #fc0000;
+}
+.space{
+  width: 100%;
+  height: 10vh;
+}
+.profil{
+  width: 100%;
+  height: auto;
+  scroll-margin-top: 15vh;
+}
+.about{
+  width: 100%;
+  height: auto;
+  scroll-margin-top: 10vh;
+}
+.project{
+  width: 100%;
+  height: auto;
+  scroll-margin-top: 10vh;
+}
+.setting{
+  width: 100%;
+  height: 90vh;
+  scroll-margin-top: 10vh;
+}
+.avatar{
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vw;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.200);
+}
+.personalData{
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  border-radius: 5vw;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.10);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.200);
+}
+.fa-instagram{
+  font-size: 7vw;
+  color: #E1306C;
+  margin: 10px;
+}
+.fa-user{
+  font-size: 7vw;
+  color: rgb(0,45,162);
+  margin: 10px;
+}
+.fa-tiktok{
+  font-size: 7vw;
+  color: #000;
+  margin: 10px;
+}
+.fa-github{
+  font-size: 7vw;
+  color: #000;
+  margin: 10px;
+}
+.personalData ul li{
+  list-style: none;
+  margin-left: -2rem;
+  border-bottom: 1.5px solid rgba(0,0,0,0.273);
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+.personalData ul li span{
+  font-size: 4vw;
+  font-weight: 500;
+}
+.box-1{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box-2{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.box-3{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.box-4{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+.project .box-3 ol li{
+  list-style: decimal;
+  font-size: 2.5vh;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 1.5vw;
+  list-style-position: inside;
+  margin-left: -7vw;
+  color: #fff;
+  border-bottom: 1.5px solid #000;
+  
+}
+.box-3 ol li a{
+  color: #fff;
+}
+.box-4 button{
+  margin-top: 3vw;
+  border: 1px solid #000;
+  background: rgba(0,0,0,0.082);
+  height: 12vw;
+  border-radius: 10vw;
+  font-size: 5vw;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #000;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.200);
+  transition: 0.3s;
+}
+.box-4 button:active{
+  background: rgba(0,0,0,0.216);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.200);
+  transform: translate(5px,5px) scale(0.9);
+}
+/* loader full page */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #rgba(0,0,0,0.200);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+/* animasi loading */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* animasi muter */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
