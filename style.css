@@ -25,6 +25,7 @@ body{
   width: 100%;
   height: auto;
   background: linear-gradient(0deg, #FFCCF2, #0033FF, #FFCCF2);
+  transition: all 0.3s ease-out;
 }
 h1{
   text-transform: capitalize;
